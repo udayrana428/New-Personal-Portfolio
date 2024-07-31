@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.header-container{
+    display: flex;
+    position:fixed;
+    z-index: 3;
+    top: 25%;
+    left: 80%;
+    width: 20%;
+    height: 50%;
+    /* border: 2px solid white; */
+    justify-content: center;
+    align-items: center;
+}
+.menu-container{
+    height: 100%;
+}
+.menu-list-container{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+a span{
+    text-decoration: none;
+    list-style: none;
+    display: none;
+}
+.fa{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(146, 146, 146);
+    padding: 20% 20% 20% 20%;
+    border-radius: 20px ;
+    
+}
+.menu-item{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menu-item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: 0 0 0 38%;
+    color: white;
+    text-decoration: none;
+
+}
+.menu-item:hover {
+    background-color: rgb(130, 21, 255); /* Or your desired hover color */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition */
+  }
+.menu-item:hover .fa{
+    background-color: rgb(130, 21, 255); /* Or your desired hover color */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition */
+}
+  .menu-item span {
+    display: block; /* Or any other display type you prefer */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition */
+    
+  }
+  
+  .menu-item:hover span {
+    opacity: 1; /* Show the span on hover */
+    
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 576px) {
+    .header-container{
+        display: none;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .header-container{
+        display: flex;
+    }
+  }

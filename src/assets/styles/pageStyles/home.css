@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.home-main{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+    background-color: rgb(10, 10, 10); /* Or your desired hover color */
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.side-wall{
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(130, 21, 255); /* Or your desired hover color */
+    display: flex;
+    position: absolute;
+    transform: rotate(-15deg) scaleY(1.5);
+    top: 0;
+    left: -18%;
+    /* transform: scale(1); */
+    z-index: 1;
+
+}
+
+.home-main-container{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    /* border: 2px solid white; */
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* profile container */
+.profile-container{
+    width: 35%;
+    /* background-image: url(https://tunis-wp.ibthemespro.com/wp-content/uploads/2023/09/2.jpg); */
+    overflow: hidden;
+    margin-right: 5%;
+    height: 94%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px 2px rgb(157, 37, 168), -9px -1px 1em 4px rgb(255, 255, 255);
+    position: relative;
+    /* border: 2px solid white; */
+}
+.image-profile{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+    top: 4%;
+    left: -27%;
+    transform: scaleY(2rem);
+    opacity: 0;
+}
+/* .profile-container:hover img{
+    opacity: 1;
+    transition: opacity .3s ease-in;
+} */
+.show-profile {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+ /* profile detail container */
+ .profile-detail-container{
+    /* border: 2px solid green; */
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .detail-header{
+    opacity: 0;
+ }
+ .detail-header-show{
+    opacity: 1;
+    transition: opacity .7s ease-in;
+ }
+ .button-container{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+ }
+.detail-header,.detail-header .role{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 52px;
+    color: rgb(130, 21, 255); /* Or your desired hover color */
+    /* opacity: 0; */
+
+}
+.detail-header .role{
+    color: white;
+}
+.detail-content{
+    margin: 15px 0 28px;
+    font-size: 16px;
+    line-height: 35px;
+    color: white;
+}
+.button-container button{
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 250ms all ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    position: relative;
+    z-index: 1;
+    /* padding: 8px 8px; */
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    outline: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 0 0 0 3px; 
+
+}
+.button-container button:hover{
+    background-color: rgb(130, 21, 255);
+  }
+.download-resume-btn a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns{
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: 3px;
+    background-color: rgb(130, 21, 255);
+}
+
+
+
+/* Responsive  */
+@media screen and (max-width: 576px) {
+    .side-wall{
+        display: none;
+    }
+    .home-main{
+        height: 100%;
+    }
+    .home-main-container{
+        flex-direction: column;
+    }
+    .profile-container{
+        border-radius: 10rem;
+        width: 12rem;
+        height: 12rem;
+        margin-right: 0;
+        margin-top: 7rem;
+    }
+    .profile-detail-container{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 3em;
+     }
+     .detail-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        translate: none;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 1em;
+     }
+     .detail-content{
+        text-align: center;
+     }
+     .button-container{
+        justify-content: center;
+        align-items: center;
+     }
+     .button-container button{
+        font-size: 12px;
+     }
+  }
+

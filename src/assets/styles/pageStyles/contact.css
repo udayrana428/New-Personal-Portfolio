@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+body {
+    color: white;
+    background-color: rgb(10, 10, 10);
+
+}
+
+/* Utility */
+.dash-line {
+    width: 60%;
+    /* height: 10%; */
+    color: grey;
+    margin: 3% 0;
+}
+.sub-heading {
+    font-size: 30px;
+    font-weight: 600;
+}
+/* works Main */
+
+.contact-main {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid rgb(245, 245, 245); */
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    position: relative;
+    /* overflow-y: hidden; */
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.contact-main-container{
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center ; */
+    align-items: center;
+
+    /* border: 2px solid white; */
+}
+
+.contact-header-container {
+    width: 100%;
+    height: 30%;
+    padding: 5% 0;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.transp-sec {
+    position: absolute;
+    color: rgb(58, 58, 58);
+    font-size: 70px;
+    opacity: .5;
+    font-weight: 800;
+    z-index: 1;
+}
+
+.head {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    z-index: 2;
+}
+
+.head span {
+    color: rgb(130, 21, 255);
+    /* Or your desired hover color */
+}
+.contact-container{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-info-container{
+    width: 25%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+}
+.mail-container{
+    width: 80%;
+    display: flex;
+    height: 12%;
+    /* justify-content: space-between; */
+    /* border: 1px solid white; */
+    align-items: center;
+}
+.mail-container i{
+    color: rgb(130, 21, 255);
+    /* padding: 5px; */
+    margin-right: 10px;
+    font-size: 35px;
+}
+.mail-container div span{
+    color: rgb(207, 207, 207);
+}
+.mail-container div a{
+    color: white;
+    text-decoration: none;
+}
+.social-media-container{
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.social-media-container i{
+    font-size: 20px;
+    background-color: rgb(146, 146, 146);
+    padding: 11px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 15px;
+}
+.social-media-container i:hover{
+    color: rgb(130, 21, 255);
+    transition: color .3s ease;
+}
+.contact-form-container{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid white; */
+    
+}
+.contact-form input,textarea{
+    width: 100%;
+    /* height: ; */
+    padding: 10px 2px;
+    background-color: rgb(146, 146, 146);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.contact-form input::placeholder,textarea::placeholder{
+    color: white;
+}
+
+.contact-form textarea{
+    height: 30%;
+}
+.contact-form button{
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 250ms all ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    position: relative;
+    z-index: 1;
+    /* padding: 8px 8px; */
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    outline: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 0 0 0 3px; 
+}
+.fa-paper-plane{
+    /* font-size: 20px; */
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: 3px;
+    background-color: rgb(130, 21, 255);
+}
+.contact-form button:hover{
+    background-color: rgb(130, 21, 255);
+  }
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-header-container{
+        margin-top: 3em;
+    }
+    .contact-main-container{
+        height: 100%;
+    }
+    .contact-info-container{
+        width: 100%;
+        padding: 1rem
+    }
+    .contact-form-container{
+        width: 115%;
+        margin-bottom: 3em;
+    }
+    .mail-container{
+        height: 20%;
+    padding: 1em 0;
+    }
+    .d-block{
+        display: inline;
+    }
+    .social-media-container{
+        margin-top: 1em;
+    }
+}

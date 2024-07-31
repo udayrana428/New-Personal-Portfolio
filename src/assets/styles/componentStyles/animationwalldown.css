@@ -1,0 +1,26 @@
+.animationwalldown-container {
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid white; */
+    box-shadow: 0px 4px 20px 3px rgb(199, 199, 199);
+    position: absolute;
+    z-index: 5;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.showanimationwall {
+    animation: animationwalldown .4s linear 1 forwards;
+}
+
+@keyframes animationwalldown {
+    from {
+        top: -100vh;
+    }
+
+    to {
+        top: 0;
+        opacity: 0;
+        display: none;
+    }
+}

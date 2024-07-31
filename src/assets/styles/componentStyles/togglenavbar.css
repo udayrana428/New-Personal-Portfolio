@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.togglenavbar-container{
+    /* display: flex; */
+    position:fixed;
+    z-index: 3;
+    top: 3vh;
+    left: 3vw;
+    /* width: 13%; */
+    /* height: 50%; */
+    /* border: 2px solid white; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: transparent;
+    display: none;
+}
+.togglenavbar-container Button{
+    background-color: transparent;
+    border: none;
+}
+.animate-btn{
+    transform: rotate(90deg);
+    transition: transform .3s ease-in;
+}
+.togglenavbar-container .fa-bars:hover{
+    transform: rotate(90deg);
+    transition: transform .3s ease-in;
+}
+.togglenavbar-container .fa-bars{
+    background-color: rgb(58, 58, 58);
+    padding: 1rem;
+}
+.menu-list-container{
+    
+}
+.to-nav-offcanvas{
+    background-color: rgb(58, 58, 58);
+    width: 60%;
+    color: white;
+    /* z-index: 5; */
+}
+.to-nav-offcanvas .offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offcanvas-header .btn-close{
+    color: white;
+    background-color: white;
+}
+.to-nav-offcanvas a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    width: 100%;
+}
+.to-nav-offcanvas a:hover{
+    color: rgb(130, 21, 255);
+    background-color: rgb(66, 66, 66);
+}
+
+/* Resonsive */
+
+@media screen and (max-width: 576px) {
+    .togglenavbar-container{
+        display: inline;
+    }
+    div.to-nav-offcanvas.offcanvas.offcanvas-start.show{
+        /* width: 60%; */
+    }
+    .offcanvas-header{
+        margin-top: 1em;
+        justify-content: end;
+    }
+}

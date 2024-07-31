@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loader-main{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background-color: rgb(58, 58, 58);
+}
+.spinner{
+    
+}
